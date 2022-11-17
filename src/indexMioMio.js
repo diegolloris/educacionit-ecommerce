@@ -1,4 +1,4 @@
-export function indexMioMio(params) {
+export function IndexMioMio(params) {
     return(
         <>
         <div className="topBody" >
