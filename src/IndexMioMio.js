@@ -1,4 +1,9 @@
+import { useState } from "react"
+
 export function IndexMioMio(params) {
+    const [buscador, setBuscador] = useState('');
+    
+    console.log('buscador: ', buscador );
     return(
         <>
         <div className="carrito" >
@@ -11,7 +16,7 @@ export function IndexMioMio(params) {
 
         <div className="body">
             <div className="center">
-                <input type="text" placeholder="Tu búsqueda"></input>
+                <input type="text" placeholder="Tu búsqueda" onInput={(e) => {setBuscador(e.target.value)}}></input>
             </div>
             <br />
             <div className="center">
