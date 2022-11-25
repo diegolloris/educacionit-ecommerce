@@ -16,7 +16,7 @@ export function IndexMioMio(params) {
 
         <div className="body">
             <div className="center">
-                <input type="text" placeholder="Tu búsqueda" onInput={(e) => {setBuscador(e.target.value)}}></input>
+                <input type="text" placeholder="Tu búsqueda" onBlur={(e) => {setBuscador(e.target.value)}}></input>
             </div>
             <br />
             <div className="center">
