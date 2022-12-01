@@ -1,15 +1,24 @@
 import { useState } from "react"
+import { useNavigate } from "react-router-dom"
 
 export function IndexMioMio(params) {
     const [buscador, setBuscador] = useState('');
     
+    let navigate = useNavigate();
+
     console.log('buscador: ', buscador );
+
+    function goToCart() {
+        alert('anda');
+        navigate("/cart", {replace: true})
+    }
+
     return(
         <>
         <div className="carrito" >
             <h2>MioMio</h2>
             <div className="center">
-                <button>Carrito</button>
+                <button onClick={ goToCart }>Carrito</button>
             </div> 
             <hr />
         </div>

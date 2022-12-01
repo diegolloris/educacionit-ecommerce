@@ -1,15 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { CartMioMio } from './CartMioMio';
-import { DetailsMioMio } from './DetailsMioMio';
-import './index.css';
-import { IndexMioMio } from './IndexMioMio';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter } from "react-router-dom";
+import App from "./App";
 //import { IndexMioMio } from './IndexMioMio';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <CartMioMio/>
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
 );
 
 reportWebVitals();

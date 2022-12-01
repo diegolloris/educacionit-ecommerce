@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const CartMioMio = () => {
   return (
@@ -37,7 +38,7 @@ export const CartMioMio = () => {
         </div>
       </div>
       <div className="center">
-        <a href="#"> Seguir Comprando </a>
+        <Link to={"/home"}> Seguir Comprando </Link>
         <a href="#"> PAGAR $2500 </a>
       </div>
     </>
