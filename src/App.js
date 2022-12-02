@@ -11,7 +11,7 @@ function App() {
       <Routes>
         <Route path='/' element={<IndexMioMio/> } />
         <Route path='/home' element={<IndexMioMio/> } />
-        <Route path='/detail' element={<DetailsMioMio/> } />
+        <Route path='/detail/:id' element={<DetailsMioMio/> } />
         <Route path='/cart' element={<CartMioMio/> } />
         
         <Route path='/*' element={<h1>ruta no encontrada</h1> } />
