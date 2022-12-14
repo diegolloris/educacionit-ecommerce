@@ -1,9 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import {IndexMioMio} from './IndexMioMio.js'
-import { DetailsMioMio } from './DetailsMioMio';
-import { CartMioMio } from './CartMioMio';
+import {IndexMioMio} from './components/index/IndexMioMio'
+import { DetailsMioMio } from './components/details/DetailsMioMio';
+import { CartMioMio } from './components/cart/CartMioMio';
 
 function App() {
   return (
